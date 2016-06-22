@@ -1,6 +1,9 @@
 Debug/
+Debug/*
 Release/
+Release/*
 .vs/
 *.aps
 *.sln
 *.vcxproj*
+*.obj
