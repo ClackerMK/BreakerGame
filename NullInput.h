@@ -6,7 +6,7 @@
 
 #include "Locator.h"
 
-namespace brk {
+namespace brkr {
 	class NullInput :
 		public Input
 	{

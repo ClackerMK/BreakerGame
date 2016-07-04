@@ -1,6 +1,6 @@
 #include "SettingsState.h"
 
-using namespace brk;
+using namespace brkr;
 
 SettingsState::SettingsState()
 {

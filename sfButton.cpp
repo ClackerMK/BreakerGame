@@ -1,7 +1,7 @@
 #include "sfButton.h"
 
 
-namespace brk
+namespace brkr
 {
 	namespace gui
 	{

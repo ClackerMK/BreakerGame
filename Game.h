@@ -6,7 +6,7 @@
 #include "GameState.h"
 #include "InitState.h"
 
-namespace brk
+namespace brkr
 {
 	class Game
 	{
@@ -17,12 +17,12 @@ namespace brk
 
 		const sf::Time TIMESTEP;
 
-		static bool m_running;
+		bool m_running;
 	public:
 		Game();
 
 		void run();
 
-		static void stop() { m_running = false; }
+		void stop() { m_running = false; }
 	};
 };

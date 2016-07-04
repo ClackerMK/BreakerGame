@@ -17,9 +17,9 @@ namespace brk {
 		~GraphicBreaker();
 
 		void				setRenderWindow(std::shared_ptr<sf::RenderWindow> wndw);
-		void				setCamera(const sf::View& view);
+		void				setCamera(const sf::View& view) const;
 
-		sf::View			getCamera();
+		sf::View			getCamera() const;
 
 
 		void				drawMap(std::shared_ptr<CellGrid> grid);

@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 
 
-namespace brk {
+namespace brkr {
 	class Tilemap
 	{
 	public:

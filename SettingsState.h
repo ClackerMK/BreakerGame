@@ -1,18 +1,18 @@
 #pragma once
 #include "GameState.h"
 
-namespace brk
+namespace brkr
 {
 	class SettingsState :
-		public brk::GameState
+		public brkr::GameState
 	{
 	public:
 		SettingsState();
 		~SettingsState();
 
-		std::unique_ptr<GameState> update(sf::Time dt) override
+		GameState* update(sf::Time dt) override
 		{
-			return nullptr;
+			return this;
 		}
 
 		void draw() override

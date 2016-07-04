@@ -1,7 +1,7 @@
 #include "SFMLInput.h"
 
 
-namespace brk {
+namespace brkr {
 	bool SFMLInput::keyWasPressed(sf::Keyboard::Key k) const
 	{
 		auto it = m_keyStatus.find(k);

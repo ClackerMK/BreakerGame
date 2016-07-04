@@ -4,7 +4,7 @@
 
 #include <SFML/System/Clock.hpp>
 
-namespace brk {
+namespace brkr {
 	class GameState
 	{
 	public:
@@ -12,7 +12,7 @@ namespace brk {
 		{
 		}
 
-		virtual std::unique_ptr<GameState> update(sf::Time dt) = 0;
+		virtual GameState * update(sf::Time dt) = 0;
 		virtual void draw() = 0;
 	};
 }

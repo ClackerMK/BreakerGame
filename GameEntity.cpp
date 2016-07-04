@@ -1,12 +1,12 @@
 #include "GameEntity.h"
 
-using namespace brk;
+using namespace brkr;
 
-	GameEntity::GameEntity()
-	{
-	}
+GameEntity::GameEntity()
+{
+}
 
 
-	GameEntity::~GameEntity()
-	{
-	}
+GameEntity::~GameEntity()
+{
+}

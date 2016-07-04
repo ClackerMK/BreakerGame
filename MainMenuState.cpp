@@ -2,32 +2,32 @@
 
 #include <iostream>
 
-using namespace brk;
+using namespace brkr;
 
-	MainMenuState::MainMenuState() : Graphics(Locator::getGraphics()), Input(Locator::getInput())
-	{
+MainMenuState::MainMenuState() : Graphics(Locator::getGraphics()), Input(Locator::getInput())
+{
 		
-	}
+}
 
-	std::unique_ptr<GameState> MainMenuState::update(sf::Time dt)
-	{
-		sf::Event event;
+GameState * MainMenuState::update(sf::Time dt)
+{
+	sf::Event event;
 		
-		// Event processing.
-		while (Input->pollEvents(event)) {
+	// Event processing.
+	while (Input->pollEvents(event)) {
 			
-			// If window is about to be closed, leave program.
-			if (event.type == sf::Event::Closed) {
-				return std::make_unique<EndState>();
-			}
+		// If window is about to be closed, leave program.
+		if (event.type == sf::Event::Closed) {
+			return nullptr;
 		}
-		
-		return nullptr;
 	}
+		
+	return this;
+}
 
-	void MainMenuState::draw()
-	{		
-		Graphics->clear(sf::Color::Black);
+void MainMenuState::draw()
+{		
+	Graphics->clear(sf::Color::Black);
 		
-		Graphics->display();
-	}
+	Graphics->display();
+}

@@ -15,15 +15,15 @@
 #include "SFMLInput.h"
 #include "Locator.h"
 
-namespace brk {
+namespace brkr {
 
 	class InitState :
-		public brk::GameState
+		public brkr::GameState
 	{	
 	public:
 		InitState();
 
-		std::unique_ptr<GameState> update(sf::Time dt);
+		GameState * update(sf::Time dt);
 		void draw();
 	};
 

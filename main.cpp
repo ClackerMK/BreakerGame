@@ -4,9 +4,9 @@
 
 int main()
 {
-	brk::Game game;
+	brkr::Game game;
 
-	brk::Resources res;
+	brkr::Resources res;
 
 	res.getTexture("Menu");
 

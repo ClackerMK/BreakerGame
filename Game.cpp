@@ -1,8 +1,6 @@
 #include "Game.h"
 
-using namespace brk;
-
-bool Game::m_running = true;
+using namespace brkr;
 
 Game::Game() : TIMESTEP(sf::milliseconds(333)), m_currentState(std::make_unique<InitState>())
 {
@@ -31,10 +29,12 @@ void Game::run()
 void Game::update(sf::Time dt)
 {
 	auto state = m_currentState->update(dt);
-	if (state != nullptr)
+	if (state == nullptr)
 	{
-		m_currentState = std::move(state);
-	}
+		m_running = false;
+	} else if (state != m_currentState.get()) {
+		m_currentState.reset(state);
+	} 
 }
 
 

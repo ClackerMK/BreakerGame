@@ -8,7 +8,7 @@
 #include "Input.h"
 #include "NullInput.h"
 
-namespace brk {
+namespace brkr {
 	class Locator
 	{
 	private:

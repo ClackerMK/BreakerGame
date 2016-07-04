@@ -2,16 +2,15 @@
 
 #include "GameState.h"
 
-#include "Map.h"
-
-class MainGameState : public brk::GameState
+namespace brkr
 {
-public:
-	std::unique_ptr<GameState> update(sf::Time dt) override;
-	void draw() override;
-	
-private:
-	brk::CellGrid gamemap_;
+	class MainGameState : public GameState
+	{
+	public:
 
+	protected:
+		
+	private:
 
-};
+	};
+}

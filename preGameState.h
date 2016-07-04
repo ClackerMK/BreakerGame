@@ -1,16 +1,16 @@
 #pragma once
 #include "GameState.h"
 
-namespace brk
+namespace brkr
 {
 	class preGameState :
-		public brk::GameState
+		public brkr::GameState
 	{
 	public:
 		preGameState();
 		~preGameState();
 
-		std::unique_ptr<GameState> update(sf::Time dt) override
+		GameState * update(sf::Time dt) override
 		{
 
 

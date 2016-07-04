@@ -4,7 +4,7 @@
 
 #include <memory>
 
-namespace brk {
+namespace brkr {
 	class SFMLGraphics : public Graphics
 	{
 	private:

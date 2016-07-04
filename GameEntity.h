@@ -2,7 +2,7 @@
 
 #include <memory>
 
-namespace brk {
+namespace brkr {
 	class GameEntity
 	{
 	private:

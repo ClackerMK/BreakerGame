@@ -4,7 +4,7 @@
 
 #include "Graphics.h"
 
-namespace brk {
+namespace brkr {
 	class Input
 	{
 	public:

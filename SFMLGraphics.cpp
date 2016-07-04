@@ -1,6 +1,6 @@
 #include "SFMLGraphics.h"
 
-namespace brk
+namespace brkr
 {
 	// Constructor
 	SFMLGraphics::SFMLGraphics(sf::Vector2u size, unsigned int depth, bool fullscreen)

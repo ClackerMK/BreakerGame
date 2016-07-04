@@ -13,12 +13,12 @@
 
 #include "Locator.h"
 
-namespace brk {
+namespace brkr {
 	/* The Main Menu
 	 * where the Player is able to continue to the game, start and quit the game
 	 */
 	class MainMenuState :
-		public brk::GameState
+		public brkr::GameState
 	{	
 	public:
 		// Constructor
@@ -26,7 +26,7 @@ namespace brk {
 
 		// Update
 		// @param 
-		virtual std::unique_ptr<GameState> update(sf::Time dt);
+		virtual GameState * update(sf::Time dt);
 
 		// Draw
 		virtual void draw();

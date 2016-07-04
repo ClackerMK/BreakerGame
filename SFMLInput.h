@@ -6,7 +6,7 @@
 
 #include "Input.h"
 
-namespace brk {
+namespace brkr {
 	class SFMLInput :
 		public Input
 	{

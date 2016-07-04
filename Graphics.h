@@ -4,7 +4,7 @@
 
 #include "Input.h"
 
-namespace brk {
+namespace brkr {
 	class Graphics
 	{
 	public:

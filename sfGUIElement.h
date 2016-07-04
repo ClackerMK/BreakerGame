@@ -4,7 +4,7 @@
 #include <map>
 #include <functional>
 
-namespace brk
+namespace brkr
 {
 	namespace gui
 	{

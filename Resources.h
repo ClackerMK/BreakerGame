@@ -10,7 +10,7 @@
 
 #include <iostream>
 
-namespace brk {
+namespace brkr {
 	class Resources
 	{
 	public:

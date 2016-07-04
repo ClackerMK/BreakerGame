@@ -8,25 +8,22 @@
 #include "GameEntity.h"
 
 
-namespace brk
+namespace brkr
 {
 	class CellLayer
 	{
 	private:
 		std::vector<std::vector<sharedEntity>> cells_;
 
-		const int		x_;
-		const int		y_;
-
-		const int		size_;
+		const std::size_t		x_;
+		const std::size_t		y_;
 	public:
-		CellLayer(int x, int y, int size);	// Standardconstructor
-		CellLayer(const CellLayer& r);		// Copyconstructor
+		CellLayer(int x, int y);	// Standardconstructor
 
-		void					setEntity(sf::Vector2i v, sharedEntity entity);
-		sharedEntity			getEntity(sf::Vector2i v) const;
-		void					move(sf::Vector2i v1, sf::Vector2i v2);
-		std::tuple<int, int>	getSize() const;
+		void									setEntity(sf::Vector2i v, sharedEntity entity);
+		sharedEntity							getEntity(sf::Vector2i v) const;
+		void									move(sf::Vector2i v1, sf::Vector2i v2);
+		std::tuple<std::size_t, std::size_t>	getSize() const;
 	};
 
 
@@ -34,22 +31,20 @@ namespace brk
 	{
 	private:
 		std::vector<CellLayer> layers_;
-		const int		x_;
-		const int		y_;
-		const int		z_;
+		const std::size_t		x_;
+		const std::size_t		y_;
+		const std::size_t		z_;
 
-		const int		size_;
 	public:
-		CellGrid(int x, int y, int z, int size);
-		CellGrid(const CellGrid& r);
+		CellGrid(int x, int y, int z);
 
-		void						setEntity(sf::Vector3i v, sharedEntity entity);
-		sharedEntity				getEntity(sf::Vector3i v) const;
-		void						move(sf::Vector3i v1, sf::Vector3i v2);
-		CellLayer					getLayer(int z) const;
-		std::tuple<int, int, int>	getSize() const;
+		void												setEntity(sf::Vector3i v, sharedEntity entity);
+		sharedEntity										getEntity(sf::Vector3i v) const;
+		void												move(sf::Vector3i v1, sf::Vector3i v2);
+		CellLayer											getLayer(int z) const;
+		std::tuple<std::size_t, std::size_t, std::size_t>	getSize() const;
 
 	};
 
-
+	using Map = CellGrid;
 };

@@ -20,12 +20,12 @@ using namespace brk;
 		window__ = wndw;
 	}
 
-	void GraphicBreaker::setCamera(const sf::View& view)
+	void GraphicBreaker::setCamera(const sf::View& view) const
 	{
 		window__->setView(view);
 	}
 
-	sf::View GraphicBreaker::getCamera()
+	sf::View GraphicBreaker::getCamera() const
 	{
 		return window__->getView();
 	}

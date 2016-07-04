@@ -1,6 +1,6 @@
 #include "Locator.h"
 
-namespace brk {
+namespace brkr {
 	Graphics* Locator::m_graphicService = nullptr;
 	NullGraphics Locator::m_nullGraphics;
 

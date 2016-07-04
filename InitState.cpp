@@ -1,6 +1,6 @@
 #include "InitState.h"
 
-using namespace brk;
+using namespace brkr;
 
 	InitState::InitState()
 	{
@@ -42,10 +42,10 @@ using namespace brk;
 		Locator::provideInput(new SFMLInput);
 	}
 	
-	std::unique_ptr<GameState> InitState::update(sf::Time dt)
+	GameState * InitState::update(sf::Time dt)
 	{
 
-		return std::make_unique<MainMenuState>();
+		return new MainMenuState;
 	}
 
 	void InitState::draw()

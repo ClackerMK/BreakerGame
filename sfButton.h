@@ -4,7 +4,7 @@
 
 #include "Locator.h"
 
-namespace brk
+namespace brkr
 {
 	namespace gui
 	{
