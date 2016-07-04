@@ -2,12 +2,12 @@
 
 #include "Map.h"
 
-namespace brk {
+namespace brkr {
 
 	class World
 	{
 	private:
-		brkr::Map gameMap;
+		Map gameMap;
 	public:
 		World();
 

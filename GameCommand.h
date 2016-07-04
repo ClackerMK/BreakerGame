@@ -2,7 +2,7 @@
 
 #include "World.h"
 
-namespace brk
+namespace brkr
 {
 	class GameCommand
 	{
