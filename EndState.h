@@ -2,15 +2,12 @@
 
 #include "GameState.h"
 
-namespace brk {
+namespace brkr {
 	class EndState :
-		public brk::GameState
+		public GameState
 	{
 	public:
-		EndState();
-		~EndState();
-
-		GameState * update(sf::Time dt) override
+		GameState* update(sf::Time dt) override
 		{
 			return nullptr;
 		}
